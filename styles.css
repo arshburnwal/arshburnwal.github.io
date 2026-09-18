@@ -1,0 +1,56 @@
+/* ===== Base ===== */
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', system-ui, sans-serif; }
+
+/* ===== Navbar links ===== */
+.nav-link {
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #d4d4d8;
+  transition: color 0.2s;
+}
+.nav-link:hover { color: #34d399; }
+
+/* ===== Glow utilities ===== */
+.text-glow { text-shadow: 0 0 12px rgba(16, 185, 129, 0.55); }
+
+.grid-bg {
+  background-image:
+    linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+.radial-fade {
+  -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 40%, transparent 100%);
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 40%, transparent 100%);
+}
+
+.tech-card:hover, .contact-card:hover {
+  box-shadow: 0 0 0 1px rgba(16,185,129,0.45), 0 0 32px -6px rgba(16,185,129,0.4);
+}
+
+/* ===== Keyframes ===== */
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(16,185,129,0.6); }
+  50% { opacity: 0.85; box-shadow: 0 0 0 6px rgba(16,185,129,0); }
+}
+.animate-pulse-dot { animation: pulse-dot 2s ease-in-out infinite; }
+
+/* ===== Scroll reveal ===== */
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger children inside reveal grids */
+.reveal > .tech-card,
+.reveal > .contact-card {
+  transition-delay: 0s;
+}

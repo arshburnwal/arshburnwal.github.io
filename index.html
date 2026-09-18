@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary SEO Meta Tags -->
+    <title>Arsh Burnwal — Freelance Frontend Developer & UI Specialist</title>
+    <meta name="title" content="Arsh Burnwal — Freelance Frontend Developer & UI Specialist" />
+    <meta name="description"
+        content="High-performance frontend engineering, responsive UI development, and rapid landing page deployment tailored to scale your business." />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://arshburnwal.github.io/" />
+
+    <!-- Open Graph / Facebook / WhatsApp / LinkedIn -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://arshburnwal.github.io/" />
+    <meta property="og:title" content="Arsh Burnwal — Freelance Frontend Developer & UI Specialist" />
+    <meta property="og:description"
+        content="High-performance frontend engineering, responsive UI development, and rapid landing page deployment tailored to scale your business." />
+    <meta property="og:image" content="https://arshburnwal.github.io/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter / Discord Preview Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://arshburnwal.github.io/" />
+    <meta name="twitter:title" content="Arsh Burnwal — Freelance Frontend Developer & UI Specialist" />
+    <meta name="twitter:description"
+        content="High-performance frontend engineering, responsive UI development, and rapid landing page deployment tailored to scale your business." />
+    <meta name="twitter:image" content="https://arshburnwal.github.io/og-image.png" />
+
+    <!-- Styles & Scripts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="bg-zinc-950 text-white antialiased">
+    <!-- NAVBAR -->
+    <header id="navbar" class="fixed inset-x-0 top-0 z-50 transition-all duration-300">
+        <nav class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 sm:px-8">
+            <a href="#hero" data-scroll class="flex items-center gap-2.5">
+                <span class="relative flex h-2.5 w-2.5">
+                    <span
+                        class="absolute inline-flex h-full w-full animate-pulse-dot rounded-full bg-emerald-400"></span>
+                    <span class="relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-400"></span>
+                </span>
+                <span class="text-lg font-semibold tracking-tight">Arsh<span class="text-emerald-400">.dev</span></span>
+            </a>
+
+            <div class="hidden items-center gap-1 md:flex">
+                <a href="#about" data-scroll class="nav-link">About</a>
+                <a href="#skills" data-scroll class="nav-link">Skills</a>
+                <a href="#work" data-scroll class="nav-link">Client Work</a>
+                <a href="#contact" data-scroll class="nav-link">Contact</a>
+                <a href="#contact" data-scroll
+                    class="ml-2 rounded-lg border border-emerald-500/40 bg-emerald-500/10 px-4 py-2 text-sm font-medium text-emerald-300 transition-all hover:bg-emerald-500/20 hover:border-emerald-500/70">Hire
+                    Me</a>
+            </div>
+
+            <button id="menu-btn"
+                class="flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 text-zinc-200 md:hidden"
+                aria-label="Toggle menu">
+                <i data-lucide="menu" class="icon-open"></i>
+                <i data-lucide="x" class="icon-close hidden"></i>
+            </button>
+        </nav>
+
+        <div id="mobile-menu" class="overflow-hidden transition-all duration-300 max-h-0 md:hidden">
+            <div class="space-y-1 bg-zinc-950/95 px-5 py-4 border-t border-white/5">
+                <a href="#about" data-scroll
+                    class="mobile-link block w-full rounded-lg px-4 py-3 text-left text-sm font-medium text-zinc-300 hover:bg-emerald-500/10 hover:text-emerald-400">About</a>
+                <a href="#skills" data-scroll
+                    class="mobile-link block w-full rounded-lg px-4 py-3 text-left text-sm font-medium text-zinc-300 hover:bg-emerald-500/10 hover:text-emerald-400">Skills</a>
+                <a href="#work" data-scroll
+                    class="mobile-link block w-full rounded-lg px-4 py-3 text-left text-sm font-medium text-zinc-300 hover:bg-emerald-500/10 hover:text-emerald-400">Client
+                    Work</a>
+                <a href="#contact" data-scroll
+                    class="mobile-link block w-full rounded-lg px-4 py-3 text-left text-sm font-medium text-zinc-300 hover:bg-emerald-500/10 hover:text-emerald-400">Contact</a>
+                <a href="#contact" data-scroll
+                    class="mobile-link mt-1 block w-full rounded-lg border border-emerald-500/40 bg-emerald-500/10 px-4 py-3 text-sm font-medium text-emerald-300">Hire
+                    Me</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section id="hero" class="relative flex min-h-screen items-center overflow-hidden pt-24">
+        <div class="absolute inset-0 grid-bg radial-fade opacity-60"></div>
+        <div
+            class="absolute -top-32 left-1/2 h-96 w-[36rem] -translate-x-1/2 rounded-full bg-emerald-500/15 blur-[120px]">
+        </div>
+
+        <div class="relative mx-auto w-full max-w-6xl px-5 sm:px-8">
+            <div
+                class="reveal inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-4 py-1.5 text-xs font-medium text-emerald-300">
+                <span class="h-2 w-2 animate-pulse-dot rounded-full bg-emerald-400"></span>
+                Available for Freelance Projects
+            </div>
+
+            <h1 class="reveal mt-6 max-w-3xl text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl md:text-6xl">
+                Turning Bold Visions Into <span class="text-emerald-400 text-glow">Premium Web Realities.</span>
+            </h1>
+
+            <p class="reveal mt-6 max-w-2xl text-base leading-relaxed text-zinc-400 sm:text-lg">
+                High-performance frontend engineering, responsive UI development, and rapid landing page deployment
+                tailored to scale your business.
+            </p>
+
+            <div class="reveal mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
+                <a href="#work" data-scroll
+                    class="group inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-500 px-6 py-3.5 text-sm font-semibold text-zinc-950 transition-all hover:bg-emerald-400 hover:shadow-[0_0_30px_-4px_rgba(16,185,129,0.6)]">
+                    Explore My Work
+                    <i data-lucide="arrow-right"
+                        class="h-[18px] w-[18px] transition-transform group-hover:translate-x-1"></i>
+                </a>
+                <a href="#contact" data-scroll
+                    class="inline-flex items-center justify-center gap-2 rounded-xl border border-white/15 bg-white/5 px-6 py-3.5 text-sm font-semibold text-white transition-all hover:border-emerald-500/50 hover:text-emerald-300">
+                    <i data-lucide="message-square" class="h-[18px] w-[18px]"></i>
+                    Get in Touch
+                </a>
+            </div>
+
+            <div class="reveal mt-14 flex flex-wrap gap-x-10 gap-y-4 text-sm text-zinc-500">
+                <div><span class="text-xl font-semibold text-white">2+</span>
+                    <p class="mt-0.5">Years Crafting UI</p>
+                </div>
+                <div class="hidden h-10 w-px bg-white/10 sm:block"></div>
+                <div><span class="text-xl font-semibold text-white">5+</span>
+                    <p class="mt-0.5">Projects Shipped</p>
+                </div>
+                <div class="hidden h-10 w-px bg-white/10 sm:block"></div>
+                <div><span class="text-xl font-semibold text-white">100%</span>
+                    <p class="mt-0.5">Client Satisfaction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT + SKILLS -->
+    <section id="about" class="relative py-24 sm:py-32">
+        <div class="mx-auto max-w-6xl px-5 sm:px-8">
+            <div class="grid gap-12 lg:grid-cols-2 lg:gap-16">
+                <div class="reveal">
+                    <span class="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-400">The Architect</span>
+                    <h2 class="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">Engineering modern, high-speed web
+                        experiences.</h2>
+                    <p class="mt-6 text-base leading-relaxed text-zinc-400">
+                        I am a driven Frontend Developer and UI Engineer specializing in architecting modern, high-speed
+                        static web applications. By blending core web standards with cutting-edge layout design, I help
+                        businesses and organizations establish a dominant, beautiful digital footprint with rapid
+                        execution.
+                    </p>
+                </div>
+
+                <div id="skills" class="reveal lg:pt-2">
+                    <span class="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-400">The Toolkit</span>
+                    <h3 class="mt-3 text-2xl font-bold tracking-tight">Tech Stack</h3>
+
+                    <div class="mt-6 space-y-7">
+                        <div>
+                            <p class="mb-3 text-xs font-medium uppercase tracking-wider text-zinc-500">Languages</p>
+                            <div class="grid grid-cols-1 gap-3 sm:grid-cols-3">
+                                <div
+                                    class="tech-card group flex items-center gap-3 rounded-xl border border-white/10 bg-zinc-900/60 p-3.5 transition-all hover:border-emerald-500/40">
+                                    <span
+                                        class="flex h-9 w-9 items-center justify-center rounded-lg bg-emerald-500/10 text-emerald-400 transition-colors group-hover:bg-emerald-500/20"><i
+                                            data-lucide="code-2" class="h-[18px] w-[18px]"></i></span>
+                                    <span class="text-sm font-medium text-zinc-200">HTML5</span>
+                                </div>
+                                <div
+                                    class="tech-card group flex items-center gap-3 rounded-xl border border-white/10 bg-zinc-900/60 p-3.5 transition-all hover:border-emerald-500/40">
+                                    <span
+                                        class="flex h-9 w-9 items-center justify-center rounded-lg bg-emerald-500/10 text-emerald-400 transition-colors group-hover:bg-emerald-500/20"><i
+                                            data-lucide="file-code-2" class="h-[18px] w-[18px]"></i></span>
+                                    <span class="text-sm font-medium text-zinc-200">CSS3</span>
+                                </div>
+                                <div
+                                    class="tech-card group flex items-center gap-3 rounded-xl border border-white/10 bg-zinc-900/60 p-3.5 transition-all hover:border-emerald-500/40">
+                                    <span
+                                        class="flex h-9 w-9 items-center justify-center rounded-lg bg-emerald-500/10 text-emerald-400 transition-colors group-hover:bg-emerald-500/20"><i
+                                            data-lucide="braces" class="h-[18px] w-[18px]"></i></span>
+                                    <span class="text-sm font-medium text-zinc-200">JavaScript (ES6+)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p class="mb-3 text-xs font-medium uppercase tracking-wider text-zinc-500">Frameworks &amp;
+                                Libraries</p>
+                            <div class="grid grid-cols-1 gap-3 sm:grid-cols-3">
+                                <div
+                                    class="tech-card group flex items-center gap-3 rounded-xl border border-white/10 bg-zinc-900/60 p-3.5 transition-all hover:border-emerald-500/40">
+                                    <span
+                                        class="flex h-9 w-9 items-center justify-center rounded-lg bg-emerald-500/10 text-emerald-400 transition-colors group-hover:bg-emerald-500/20"><i
+                                            data-lucide="atom" class="h-[18px] w-[18px]"></i></span>
+                                    <span class="text-sm font-medium text-zinc-200">React</span>
+                                </div>
+                                <div
+                                    class="tech-card group flex items-center gap-3 rounded-xl border border-white/10 bg-zinc-900/60 p-3.5 transition-all hover:border-emerald-500/40">
+                                    <span
+                                        class="flex h-9 w-9 items-center justify-center rounded-lg bg-emerald-500/10 text-emerald-400 transition-colors group-hover:bg-emerald-500/20"><i
+                                            data-lucide="wind" class="h-[18px] w-[18px]"></i></span>
+                                    <span class="text-sm font-medium text-zinc-200">Tailwind CSS</span>
+                                </div>
+                                <div
+                                    class="tech-card group flex items-center gap-3 rounded-xl border border-white/10 bg-zinc-900/60 p-3.5 transition-all hover:border-emerald-500/40">
+                                    <span
+                                        class="flex h-9 w-9 items-center justify-center rounded-lg bg-emerald-500/10 text-emerald-400 transition-colors group-hover:bg-emerald-500/20"><i
+                                            data-lucide="layout-grid" class="h-[18px] w-[18px]"></i></span>
+                                    <span class="text-sm font-medium text-zinc-200">Bootstrap</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p class="mb-3 text-xs font-medium uppercase tracking-wider text-zinc-500">Tooling &amp;
+                                Deployment</p>
+                            <div class="grid grid-cols-1 gap-3 sm:grid-cols-3">
+                                <div
+                                    class="tech-card group flex items-center gap-3 rounded-xl border border-white/10 bg-zinc-900/60 p-3.5 transition-all hover:border-emerald-500/40">
+                                    <span
+                                        class="flex h-9 w-9 items-center justify-center rounded-lg bg-emerald-500/10 text-emerald-400 transition-colors group-hover:bg-emerald-500/20"><i
+                                            data-lucide="git-branch" class="h-[18px] w-[18px]"></i></span>
+                                    <span class="text-sm font-medium text-zinc-200">Git</span>
+                                </div>
+                                <div
+                                    class="tech-card group flex items-center gap-3 rounded-xl border border-white/10 bg-zinc-900/60 p-3.5 transition-all hover:border-emerald-500/40">
+                                    <span
+                                        class="flex h-9 w-9 items-center justify-center rounded-lg bg-emerald-500/10 text-emerald-400 transition-colors group-hover:bg-emerald-500/20">
+                                        <svg viewBox="0 0 24 24" aria-hidden="true"
+                                            class="h-[18px] w-[18px] fill-current text-emerald-400">
+                                            <path
+                                                d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.866-.014-1.7-2.782.604-3.369-1.341-3.369-1.341-.455-1.157-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.004.071 1.532 1.03 1.532 1.03.892 1.529 2.341 1.087 2.91.831.091-.646.349-1.087.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0 1 12 7.341c.85.004 1.705.115 2.504.337 1.909-1.294 2.748-1.025 2.748-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.745 0 .267.18.578.688.48A10.001 10.001 0 0 0 22 12c0-5.523-4.477-10-10-10Z" />
+                                        </svg>
+                                    </span>
+                                    <span class="text-sm font-medium text-zinc-200">GitHub</span>
+                                </div>
+                                <div
+                                    class="tech-card group flex items-center gap-3 rounded-xl border border-white/10 bg-zinc-900/60 p-3.5 transition-all hover:border-emerald-500/40">
+                                    <span
+                                        class="flex h-9 w-9 items-center justify-center rounded-lg bg-emerald-500/10 text-emerald-400 transition-colors group-hover:bg-emerald-500/20"><i
+                                            data-lucide="rocket" class="h-[18px] w-[18px]"></i></span>
+                                    <span class="text-sm font-medium text-zinc-200">Netlify Automation</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CLIENT WORK -->
+    <section id="work" class="relative py-24 sm:py-32">
+        <div class="absolute inset-0 grid-bg radial-fade opacity-30"></div>
+        <div class="relative mx-auto max-w-6xl px-5 sm:px-8">
+            <div class="reveal text-center">
+                <span class="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-400">Live Client Work</span>
+                <h2 class="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">Selected Case Studies</h2>
+                <p class="mx-auto mt-4 max-w-xl text-sm text-zinc-400">Real projects, shipped to production. Each one
+                    engineered for speed, responsiveness, and conversion.</p>
+            </div>
+
+            <!-- Case 1: Physio For Health -->
+            <div class="reveal mt-14 grid items-center gap-8 lg:grid-cols-2 lg:gap-12">
+                <div>
+                    <div
+                        class="overflow-hidden rounded-2xl border border-white/10 bg-zinc-900 shadow-2xl transition-transform duration-500 hover:scale-[1.015]">
+                        <div class="relative aspect-[16/10] overflow-hidden bg-zinc-900">
+                            <div class="flex items-center gap-2 border-b border-white/10 bg-zinc-800/80 px-3 py-2.5">
+                                <div class="flex gap-1.5"><span class="h-3 w-3 rounded-full bg-red-400/70"></span><span
+                                        class="h-3 w-3 rounded-full bg-yellow-400/70"></span><span
+                                        class="h-3 w-3 rounded-full bg-emerald-400/70"></span></div>
+                                <div
+                                    class="ml-2 flex-1 truncate rounded-md bg-zinc-900/80 px-3 py-1 text-[10px] text-zinc-400">
+                                    physioforhealth.co.in</div>
+                            </div>
+                            <div class="h-[calc(100%-2.75rem)] overflow-hidden">
+                                <div class="flex items-center justify-between bg-zinc-900/90 px-4 py-2.5">
+                                    <div class="flex items-center gap-1.5">
+                                        <div class="h-3 w-3 rounded-full bg-emerald-400"></div><span
+                                            class="text-[9px] font-semibold text-white">PhysioForHealth</span>
+                                    </div>
+                                    <div class="hidden gap-2 sm:flex"><span
+                                            class="text-[7px] text-zinc-400">Home</span><span
+                                            class="text-[7px] text-zinc-400">Services</span><span
+                                            class="text-[7px] text-zinc-400">About</span><span
+                                            class="text-[7px] text-zinc-400">Contact</span></div>
+                                    <div
+                                        class="rounded bg-emerald-500/80 px-2 py-0.5 text-[7px] font-medium text-zinc-950">
+                                        Book</div>
+                                </div>
+                                <div class="relative px-4 py-4">
+                                    <div
+                                        class="absolute right-3 top-2 h-12 w-12 rounded-full bg-emerald-500/20 blur-xl">
+                                    </div>
+                                    <div class="h-2 w-24 rounded bg-zinc-700"></div>
+                                    <div class="mt-2 h-2.5 w-32 rounded bg-emerald-500/70"></div>
+                                    <div class="mt-1.5 h-2 w-28 rounded bg-zinc-700"></div>
+                                    <div class="mt-3 h-2 w-20 rounded bg-zinc-700"></div>
+                                    <div class="mt-3 flex gap-1.5">
+                                        <div class="h-4 w-14 rounded bg-emerald-500/80"></div>
+                                        <div class="h-4 w-12 rounded border border-white/20"></div>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-3 gap-2 px-4 py-2">
+                                    <div class="rounded-lg border border-white/10 bg-zinc-800/60 p-2">
+                                        <div class="h-4 w-4 rounded bg-emerald-500/30"></div>
+                                        <div class="mt-1.5 h-1.5 w-10 rounded bg-zinc-600"></div>
+                                        <div class="mt-1 h-1.5 w-8 rounded bg-zinc-700"></div>
+                                    </div>
+                                    <div class="rounded-lg border border-white/10 bg-zinc-800/60 p-2">
+                                        <div class="h-4 w-4 rounded bg-emerald-500/30"></div>
+                                        <div class="mt-1.5 h-1.5 w-10 rounded bg-zinc-600"></div>
+                                        <div class="mt-1 h-1.5 w-8 rounded bg-zinc-700"></div>
+                                    </div>
+                                    <div class="rounded-lg border border-white/10 bg-zinc-800/60 p-2">
+                                        <div class="h-4 w-4 rounded bg-emerald-500/30"></div>
+                                        <div class="mt-1.5 h-1.5 w-10 rounded bg-zinc-600"></div>
+                                        <div class="mt-1 h-1.5 w-8 rounded bg-zinc-700"></div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="mx-4 mt-2 flex items-center justify-between rounded-lg bg-emerald-500/15 px-3 py-2">
+                                    <div class="h-1.5 w-16 rounded bg-emerald-400/60"></div>
+                                    <div class="h-3 w-10 rounded bg-emerald-500/80"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p class="text-xs font-semibold uppercase tracking-wider text-emerald-400">Case Study 1</p>
+                    <h3 class="mt-2 text-2xl font-bold tracking-tight">Physio For Health</h3>
+                    <p class="mt-1 text-sm text-zinc-400">Premium Clinic Landing Page</p>
+                    <ul class="mt-5 space-y-3">
+                        <li class="flex gap-3 text-sm leading-relaxed text-zinc-300"><span
+                                class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-emerald-500/15 text-emerald-400"><i
+                                    data-lucide="check" class="h-3 w-3" style="stroke-width:3"></i></span>Engineered a
+                            high-conversion static landing page for a premier healthcare clinic.</li>
+                        <li class="flex gap-3 text-sm leading-relaxed text-zinc-300"><span
+                                class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-emerald-500/15 text-emerald-400"><i
+                                    data-lucide="check" class="h-3 w-3" style="stroke-width:3"></i></span>Tailored
+                            service modules with smooth interactive section routing.</li>
+                        <li class="flex gap-3 text-sm leading-relaxed text-zinc-300"><span
+                                class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-emerald-500/15 text-emerald-400"><i
+                                    data-lucide="check" class="h-3 w-3" style="stroke-width:3"></i></span>Optimized for
+                            mobile responsiveness and ultra-fast page speeds.</li>
+                    </ul>
+                    <div class="mt-5 flex flex-wrap gap-2">
+                        <span
+                            class="rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-1 text-xs font-medium text-emerald-300">HTML5</span>
+                        <span
+                            class="rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-1 text-xs font-medium text-emerald-300">Tailwind
+                            CSS</span>
+                        <span
+                            class="rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-1 text-xs font-medium text-emerald-300">Netlify</span>
+                    </div>
+                    <a href="https://physioforhealth.co.in" target="_blank" rel="noopener noreferrer"
+                        class="group mt-6 inline-flex items-center gap-2 rounded-xl bg-emerald-500 px-5 py-3 text-sm font-semibold text-zinc-950 transition-all hover:bg-emerald-400 hover:shadow-[0_0_28px_-4px_rgba(16,185,129,0.6)]">
+                        View Live Site <i data-lucide="external-link"
+                            class="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Case 2: KKSSM School -->
+            <div class="reveal mt-16 grid items-center gap-8 lg:grid-cols-2 lg:gap-12 lg:[direction:rtl]">
+                <div class="lg:[direction:ltr]">
+                    <div
+                        class="overflow-hidden rounded-2xl border border-white/10 bg-zinc-900 shadow-2xl transition-transform duration-500 hover:scale-[1.015]">
+                        <div class="relative aspect-[16/10] overflow-hidden bg-zinc-900">
+                            <div class="flex items-center gap-2 border-b border-white/10 bg-zinc-800/80 px-3 py-2.5">
+                                <div class="flex gap-1.5"><span class="h-3 w-3 rounded-full bg-red-400/70"></span><span
+                                        class="h-3 w-3 rounded-full bg-yellow-400/70"></span><span
+                                        class="h-3 w-3 rounded-full bg-emerald-400/70"></span></div>
+                                <div
+                                    class="ml-2 flex-1 truncate rounded-md bg-zinc-900/80 px-3 py-1 text-[10px] text-zinc-400">
+                                    kkssmschool.com</div>
+                            </div>
+                            <div class="h-[calc(100%-2.75rem)] overflow-hidden">
+                                <div class="flex items-center justify-between bg-zinc-800/90 px-4 py-2">
+                                    <div class="flex items-center gap-1.5">
+                                        <div
+                                            class="flex h-4 w-4 items-center justify-center rounded bg-emerald-500/80 text-[7px] font-bold text-zinc-950">
+                                            K</div><span class="text-[8px] font-semibold text-white">KKSSM</span>
+                                    </div>
+                                    <div class="hidden gap-2 sm:flex"><span
+                                            class="text-[7px] text-zinc-400">Home</span><span
+                                            class="text-[7px] text-zinc-400">About</span><span
+                                            class="text-[7px] text-zinc-400">Gallery</span><span
+                                            class="text-[7px] text-zinc-400">Academics</span><span
+                                            class="text-[7px] text-emerald-400">ERP</span></div>
+                                    <div
+                                        class="rounded border border-emerald-500/50 px-1.5 py-0.5 text-[7px] text-emerald-300">
+                                        Portal</div>
+                                </div>
+                                <div class="relative h-14 bg-gradient-to-r from-emerald-600/30 to-zinc-800">
+                                    <div class="absolute inset-0 grid-bg opacity-40"></div>
+                                    <div class="relative px-4 py-3">
+                                        <div class="h-2 w-28 rounded bg-white/80"></div>
+                                        <div class="mt-1.5 h-1.5 w-24 rounded bg-emerald-400/70"></div>
+                                        <div class="mt-1 h-1.5 w-16 rounded bg-zinc-500"></div>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-4 gap-1.5 px-4 py-2.5">
+                                    <div class="rounded border border-white/10 bg-zinc-800/50 p-1.5">
+                                        <div class="h-3 w-3 rounded bg-emerald-500/40"></div>
+                                        <div class="mt-1 h-1 w-8 rounded bg-zinc-600"></div>
+                                    </div>
+                                    <div class="rounded border border-white/10 bg-zinc-800/50 p-1.5">
+                                        <div class="h-3 w-3 rounded bg-zinc-600"></div>
+                                        <div class="mt-1 h-1 w-8 rounded bg-zinc-600"></div>
+                                    </div>
+                                    <div class="rounded border border-white/10 bg-zinc-800/50 p-1.5">
+                                        <div class="h-3 w-3 rounded bg-emerald-500/40"></div>
+                                        <div class="mt-1 h-1 w-8 rounded bg-zinc-600"></div>
+                                    </div>
+                                    <div class="rounded border border-white/10 bg-zinc-800/50 p-1.5">
+                                        <div class="h-3 w-3 rounded bg-zinc-600"></div>
+                                        <div class="mt-1 h-1 w-8 rounded bg-zinc-600"></div>
+                                    </div>
+                                </div>
+                                <div class="mx-4 rounded-lg border border-emerald-500/30 bg-emerald-500/10 px-3 py-2">
+                                    <div class="flex items-center justify-between">
+                                        <div class="h-1.5 w-12 rounded bg-emerald-400/70"></div>
+                                        <div class="flex gap-1">
+                                            <div class="h-3 w-8 rounded bg-emerald-500/60"></div>
+                                            <div class="h-3 w-8 rounded border border-emerald-500/40"></div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-1.5 grid grid-cols-3 gap-1">
+                                        <div class="h-3 rounded bg-zinc-700/60"></div>
+                                        <div class="h-3 rounded bg-zinc-700/60"></div>
+                                        <div class="h-3 rounded bg-zinc-700/60"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:[direction:ltr]">
+                    <p class="text-xs font-semibold uppercase tracking-wider text-emerald-400">Case Study 2</p>
+                    <h3 class="mt-2 text-2xl font-bold tracking-tight">Khaskenda Saraswati Shishu Mandir (KKSSM)</h3>
+                    <p class="mt-1 text-sm text-zinc-400">Comprehensive Multi-Page Educational Portal</p>
+                    <ul class="mt-5 space-y-3">
+                        <li class="flex gap-3 text-sm leading-relaxed text-zinc-300"><span
+                                class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-emerald-500/15 text-emerald-400"><i
+                                    data-lucide="check" class="h-3 w-3" style="stroke-width:3"></i></span>Developed a
+                            comprehensive multi-page static portal structure.</li>
+                        <li class="flex gap-3 text-sm leading-relaxed text-zinc-300"><span
+                                class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-emerald-500/15 text-emerald-400"><i
+                                    data-lucide="check" class="h-3 w-3" style="stroke-width:3"></i></span>Custom routing
+                            layout mapping out Home, About, Gallery, and specialized academic sections.</li>
+                        <li class="flex gap-3 text-sm leading-relaxed text-zinc-300"><span
+                                class="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-emerald-500/15 text-emerald-400"><i
+                                    data-lucide="check" class="h-3 w-3" style="stroke-width:3"></i></span>Features a
+                            dedicated ERP hub designed to seamlessly direct users to official external application
+                            links.</li>
+                    </ul>
+                    <div class="mt-5 flex flex-wrap gap-2">
+                        <span
+                            class="rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-1 text-xs font-medium text-emerald-300">JavaScript</span>
+                        <span
+                            class="rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-1 text-xs font-medium text-emerald-300">CSS3</span>
+                        <span
+                            class="rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-1 text-xs font-medium text-emerald-300">UI/UX
+                            Design</span>
+                    </div>
+                    <a href="https://kkssmschool.com" target="_blank" rel="noopener noreferrer"
+                        class="group mt-6 inline-flex items-center gap-2 rounded-xl bg-emerald-500 px-5 py-3 text-sm font-semibold text-zinc-950 transition-all hover:bg-emerald-400 hover:shadow-[0_0_28px_-4px_rgba(16,185,129,0.6)]">
+                        View Live Site <i data-lucide="external-link"
+                            class="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="relative py-24 sm:py-32">
+        <div
+            class="absolute -top-20 left-1/2 h-72 w-[40rem] -translate-x-1/2 rounded-full bg-emerald-500/10 blur-[120px]">
+        </div>
+        <div class="relative mx-auto max-w-6xl px-5 sm:px-8">
+            <div class="reveal text-center">
+                <span class="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-400">Contact &amp; Inquiry
+                    Center</span>
+                <h2 class="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">Let's Build Something Great Together</h2>
+                <p class="mx-auto mt-4 max-w-xl text-sm text-zinc-400">Have a project in mind? Reach out directly
+                    through any of the channels below for a rapid response.</p>
+            </div>
+
+            <div class="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                <a href="mailto:arshburnwal7@gmail.com"
+                    class="contact-card reveal group relative flex flex-col items-start gap-4 overflow-hidden rounded-2xl border border-white/10 bg-zinc-900/60 p-6 transition-all hover:border-emerald-500/50">
+                    <span
+                        class="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-500/10 text-emerald-400 transition-all group-hover:scale-110 group-hover:bg-emerald-500/20"><i
+                            data-lucide="mail" class="h-6 w-6"></i></span>
+                    <div>
+                        <p class="text-xs font-medium uppercase tracking-wider text-zinc-500">Email</p>
+                        <p class="mt-1 text-sm font-semibold text-white transition-colors group-hover:text-emerald-300">
+                            arshburnwal7@gmail.com</p>
+                    </div>
+                </a>
+                <a href="https://wa.me/919851635488" target="_blank" rel="noopener noreferrer"
+                    class="contact-card reveal group relative flex flex-col items-start gap-4 overflow-hidden rounded-2xl border border-white/10 bg-zinc-900/60 p-6 transition-all hover:border-emerald-500/50">
+                    <span
+                        class="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-500/10 text-emerald-400 transition-all group-hover:scale-110 group-hover:bg-emerald-500/20"><i
+                            data-lucide="message-circle" class="h-6 w-6"></i></span>
+                    <div>
+                        <p class="text-xs font-medium uppercase tracking-wider text-zinc-500">WhatsApp</p>
+                        <p class="mt-1 text-sm font-semibold text-white transition-colors group-hover:text-emerald-300">
+                            Chat on WhatsApp</p>
+                    </div>
+                </a>
+                <a href="tel:+919851635488"
+                    class="contact-card reveal group relative flex flex-col items-start gap-4 overflow-hidden rounded-2xl border border-white/10 bg-zinc-900/60 p-6 transition-all hover:border-emerald-500/50">
+                    <span
+                        class="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-500/10 text-emerald-400 transition-all group-hover:scale-110 group-hover:bg-emerald-500/20"><i
+                            data-lucide="phone" class="h-6 w-6"></i></span>
+                    <div>
+                        <p class="text-xs font-medium uppercase tracking-wider text-zinc-500">Call Direct</p>
+                        <p class="mt-1 text-sm font-semibold text-white transition-colors group-hover:text-emerald-300">
+                            +91 98516 35488</p>
+                    </div>
+                </a>
+                <a href="https://github.com/arshburnwal" target="_blank" rel="noopener noreferrer"
+                    class="contact-card reveal group relative flex flex-col items-start gap-4 overflow-hidden rounded-2xl border border-white/10 bg-zinc-900/60 p-6 transition-all hover:border-emerald-500/50">
+                    <span
+                        class="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-500/10 text-emerald-400 transition-all group-hover:scale-110 group-hover:bg-emerald-500/20">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" class="h-6 w-6 fill-current text-emerald-400">
+                            <path
+                                d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.866-.014-1.7-2.782.604-3.369-1.341-3.369-1.341-.455-1.157-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.004.071 1.532 1.03 1.532 1.03.892 1.529 2.341 1.087 2.91.831.091-.646.349-1.087.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0 1 12 7.341c.85.004 1.705.115 2.504.337 1.909-1.294 2.748-1.025 2.748-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.745 0 .267.18.578.688.48A10.001 10.001 0 0 0 22 12c0-5.523-4.477-10-10-10Z" />
+                        </svg>
+                    </span>
+                    <div>
+                        <p class="text-xs font-medium uppercase tracking-wider text-zinc-500">GitHub</p>
+                        <p class="mt-1 text-sm font-semibold text-white transition-colors group-hover:text-emerald-300">
+                            View GitHub Profile</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-white/5 py-8">
+        <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 px-5 sm:flex-row sm:px-8">
+            <p class="text-xs text-zinc-500">© 2026 Arsh Burnwal. All rights reserved. Handcrafted with precision.</p>
+            <button id="back-top"
+                class="text-xs font-medium text-emerald-400 transition-colors hover:text-emerald-300">Back to top
+                ↑</button>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
